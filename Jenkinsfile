@@ -9,15 +9,11 @@ pipeline {
             }
         }
         
-        /*stage ('Source Composition Analysis') {
+        stage ('Source Composition Analysis') {
             steps {
-              sh 'rm owasp* || true'
-              sh 'wget "https://raw.githubusercontent.com/santhoshAcc/devopsexample/master/owasp-dependency-check.sh" '
-              sh 'chmod +x owasp-dependency-check.sh'
-              sh 'bash owasp-dependency-check.sh'
-              sh 'cat /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml'
+              dependencyCheck additionalArguments: '', odcInstallation: 'Owasp'
            }
-        }*/
+        }
         
         
         stage('Test') {
