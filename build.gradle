@@ -5,6 +5,7 @@ plugins {
     id 'org.springframework.boot' version '2.2.5.RELEASE'
     id 'pl.allegro.tech.build.axion-release' version '1.10.1'
     id "org.sonarqube" version "3.0"
+    id 'gradle.plugin.nl.codenomads.plugin' version '0.0.1'
 }
 
 group 'org.example'
@@ -33,7 +34,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     compile 'com.google.guava:guava:21.0'
     // https://mvnrepository.com/artifact/gradle.plugin.nl.codenomads.plugin/saferegex-gradle-plugin
-compile group: 'gradle.plugin.nl.codenomads.plugin', name: 'saferegex-gradle-plugin', version: '0.0.1'
+    //compile group: 'gradle.plugin.nl.codenomads.plugin', name: 'saferegex-gradle-plugin', version: '0.0.1'
     
 }
 
