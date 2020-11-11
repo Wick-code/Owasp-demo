@@ -32,6 +32,9 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     compile 'com.google.guava:guava:21.0'
+    // https://mvnrepository.com/artifact/gradle.plugin.nl.codenomads.plugin/saferegex-gradle-plugin
+compile group: 'gradle.plugin.nl.codenomads.plugin', name: 'saferegex-gradle-plugin', version: '0.0.1'
+    
 }
 
 test {
