@@ -12,6 +12,7 @@ pipeline {
         stage ('Source Composition Analysis') {
             steps {
               dependencyCheck additionalArguments: '', odcInstallation: 'Owasp'
+              dependencyCheckPublisher pattern: ''
            }
         }
         
