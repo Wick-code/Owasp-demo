@@ -12,23 +12,24 @@ pipeline {
         stage ('Source Composition Analysis') {
             steps {
               dependencyCheck additionalArguments: '', odcInstallation: 'Owasp'
+              dependencyCheckPublisher pattern: ''
            }
         }
         
         
-        stage('Test') {
+       /* stage('Test') {
             steps {
                 sh './gradlew test'
             }
-        }
+        }*/
         
-        stage('SonarQube analysis') {
+        /*stage('SonarQube analysis') {
              steps {
                 withSonarQubeEnv('sonar') {
                  sh './gradlew sonarqube'
                 }
              }
-        }  
+        }*/  
         
     }
 }
