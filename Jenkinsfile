@@ -17,19 +17,19 @@ pipeline {
         }
         
         
-       /* stage('Test') {
+        stage('Test') {
             steps {
                 sh './gradlew test'
             }
-        }*/
+        }
         
-        /*stage('SonarQube analysis') {
+        stage('SonarQube analysis') {
              steps {
                 withSonarQubeEnv('sonar') {
                  sh './gradlew sonarqube'
                 }
              }
-        }*/  
+        }  
         
     }
 }
