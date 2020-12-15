@@ -33,7 +33,7 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     compile 'com.google.guava:guava:21.0'
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.2.5.RELEASE', scope: 'provided'
+    compileOnly 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.2.5.RELEASE'
 }
 
 test {
