@@ -21,7 +21,7 @@ public class EmployeeController {
         this.employeeRepository = employeeRepository;
     }
 
-    @GetMapping(value = "/employee", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "employee", produces = MediaType.APPLICATION_JSON_VALUE)
     public Iterable<Employee> getRides() {
         return employeeRepository.findAll();
     }
